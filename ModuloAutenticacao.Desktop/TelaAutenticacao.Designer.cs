@@ -63,6 +63,7 @@
             this.textLogin.Name = "textLogin";
             this.textLogin.Size = new System.Drawing.Size(137, 23);
             this.textLogin.TabIndex = 2;
+            this.textLogin.Text = "senai";
             this.textLogin.TextChanged += new System.EventHandler(this.textLogin_TextChanged);
             // 
             // textSenha
@@ -73,8 +74,8 @@
             this.textSenha.PasswordChar = '*';
             this.textSenha.Size = new System.Drawing.Size(137, 23);
             this.textSenha.TabIndex = 3;
+            this.textSenha.Text = "123";
             this.textSenha.TextChanged += new System.EventHandler(this.textSenha_TextChanged);
-           
             // 
             // button1
             // 

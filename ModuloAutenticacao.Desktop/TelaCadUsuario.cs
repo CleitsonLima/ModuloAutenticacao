@@ -65,6 +65,10 @@ namespace ModuloAutenticacao.Desktop
             ChamarNiveis();
         }
 
-  
+        private void button2_Click(object sender, EventArgs e)
+        {
+            UsuarioDAO usuario = new UsuarioDAO();
+            usuario.Inserir(txtNome.Text,txtSobreNome.Text,txtLogin.Text,txtSenha.Text,cbNivel.Text);
+        }
     }
 }

@@ -20,3 +20,18 @@ UPDATE Nivel SET nome='Desenvolvedor' WHERE codigo=2 ;
 
 DELETE Nivel WHERE codigo=7;
 
+
+-- Criação da tabela de usuario
+CREATE TABLE Usuario(
+	id INT PRIMARY KEY IDENTITY(1,1),
+	nome VARCHAR(30) NOT NULL,
+	sobreNome VARCHAR(80) NOT NULL,
+	usuario VARCHAR(80) NOT NULL,
+	senha VARCHAR (80) NOT NULL,
+	codNivel INT NOT NULL ,
+	FOREIGN KEY(codNivel)REFERENCES Nivel(codigo)
+);
+
+SELECT * FROM Usuario;
+
+DROP TABLE Usuario;
