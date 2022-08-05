@@ -67,8 +67,16 @@ namespace ModuloAutenticacao.Desktop
 
         private void button2_Click(object sender, EventArgs e)
         {
-            UsuarioDAO usuario = new UsuarioDAO();
-            usuario.Inserir(txtNome.Text,txtSobreNome.Text,txtLogin.Text,txtSenha.Text,cbNivel.Text);
+            if (txtNome.Text.Equals("") || txtSobreNome.Text.Equals("") || txtSenha.Text.Equals(""))
+            {
+                MessageBox.Show("Todos os campos são obrigatorios");
+            }
+            else
+            {
+                UsuarioDAO usuario = new UsuarioDAO();
+                usuario.Inserir(txtNome.Text, txtSobreNome.Text, txtLogin.Text, txtSenha.Text, cbNivel.Text);
+                MessageBox.Show("Usuario cadastrado com sucesso!");
+            }
         }
     }
 }

@@ -37,12 +37,16 @@ namespace ModuloAutenticacao.Classes
 
             Conexao.MinhaInstancia.Close();
 
-
-            return "Usuario Cadastrado com Sucesso!";
+            return "Cadastro adicionado";
 
         }
 
 
+
+
+
+        //Codigo Abaixo ainda nao funcional
+        /*
         public string Atualizar(string ID, string nome)
         {
 
@@ -107,5 +111,6 @@ namespace ModuloAutenticacao.Classes
             return dataTable;
 
         }
+        */
     }
 }

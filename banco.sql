@@ -14,12 +14,6 @@ INSERT into Nivel(nome) VALUES ('Usuario');
 --DQL - DATA QUERY LANGUAGE
 
 SELECT * FROM Nivel;
-SELECT nome FROM Nivel order by codigo;
-
-UPDATE Nivel SET nome='Desenvolvedor' WHERE codigo=2 ;
-
-DELETE Nivel WHERE codigo=7;
-
 
 -- Criação da tabela de usuario
 CREATE TABLE Usuario(
@@ -32,6 +26,21 @@ CREATE TABLE Usuario(
 	FOREIGN KEY(codNivel)REFERENCES Nivel(codigo)
 );
 
-SELECT * FROM Usuario;
 
-DROP TABLE Usuario;
+
+
+
+/*
+exemplos de select, update e delete
+
+SELECT * FROM Usuario;
+SELECT * FROM Nivel;
+SELECT nome FROM Nivel order by codigo;
+
+UPDATE Nivel SET nome='Desenvolvedor' WHERE codigo=2 ;
+
+DELETE Nivel WHERE codigo=4;
+
+DELETE Usuario WHERE id=4;
+
+*/

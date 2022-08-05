@@ -8,7 +8,7 @@ namespace ModuloAutenticacao.Desktop
 {
     public partial class TelaNivel : Form
     {
-        
+
         public TelaNivel()
         {
             InitializeComponent();
@@ -29,7 +29,7 @@ namespace ModuloAutenticacao.Desktop
         private void button2_Click(object sender, EventArgs e)
         {
             NivelDAO nivel = new NivelDAO();
-            MessageBox.Show(nivel.Atualizar(txtID.Text,txtNome.Text));
+            MessageBox.Show(nivel.Atualizar(txtID.Text, txtNome.Text));
             CarregarNivel();
         }
 
@@ -42,25 +42,22 @@ namespace ModuloAutenticacao.Desktop
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-            
+
             NivelDAO nivelPesquisa = new NivelDAO();
             dgvNivel.DataSource = nivelPesquisa.PesquisarPorNome(txtNome.Text);
 
-            if (txtNome.Text.Equals("")) {
-
+            if (txtNome.Text.Equals(""))
+            {
                 CarregarNivel();
                 txtID.Clear();
             }
-
-
-
         }
 
         private void TelaNivel_Load(object sender, EventArgs e)
         {
             txtID.Enabled = false;
             CarregarNivel();
-            
+
         }
         private void CarregarNivel()
         {
@@ -74,12 +71,6 @@ namespace ModuloAutenticacao.Desktop
         {
             txtID.Text = dgvNivel.Rows[e.RowIndex].Cells[0].Value.ToString();
             txtNome.Text = dgvNivel.Rows[e.RowIndex].Cells[1].Value.ToString();
-        }
-
-        private void dgvNivel_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
-        {
-            
-            //dgvNivel.Refresh();
         }
     }
 }

@@ -76,7 +76,7 @@
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(97, 152);
+            this.btnCadastrar.Location = new System.Drawing.Point(97, 138);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(75, 23);
             this.btnCadastrar.TabIndex = 4;
@@ -87,16 +87,15 @@
             // dgvNivel
             // 
             this.dgvNivel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvNivel.Location = new System.Drawing.Point(97, 193);
+            this.dgvNivel.Location = new System.Drawing.Point(12, 187);
             this.dgvNivel.Name = "dgvNivel";
-            this.dgvNivel.Size = new System.Drawing.Size(365, 210);
+            this.dgvNivel.Size = new System.Drawing.Size(510, 242);
             this.dgvNivel.TabIndex = 5;
             this.dgvNivel.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvNivel_RowHeaderMouseClick);
-            this.dgvNivel.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvNivel_RowHeaderMouseDoubleClick);
             // 
             // btnAlterar
             // 
-            this.btnAlterar.Location = new System.Drawing.Point(192, 152);
+            this.btnAlterar.Location = new System.Drawing.Point(192, 138);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(75, 23);
             this.btnAlterar.TabIndex = 6;
@@ -106,7 +105,7 @@
             // 
             // btnDeletar
             // 
-            this.btnDeletar.Location = new System.Drawing.Point(289, 152);
+            this.btnDeletar.Location = new System.Drawing.Point(289, 138);
             this.btnDeletar.Name = "btnDeletar";
             this.btnDeletar.Size = new System.Drawing.Size(75, 23);
             this.btnDeletar.TabIndex = 7;
@@ -116,7 +115,7 @@
             // 
             // btnPesquisar
             // 
-            this.btnPesquisar.Location = new System.Drawing.Point(387, 152);
+            this.btnPesquisar.Location = new System.Drawing.Point(387, 138);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(75, 23);
             this.btnPesquisar.TabIndex = 8;
@@ -129,7 +128,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(539, 447);
+            this.ClientSize = new System.Drawing.Size(534, 441);
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.btnDeletar);
             this.Controls.Add(this.btnAlterar);

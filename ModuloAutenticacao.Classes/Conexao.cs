@@ -14,12 +14,15 @@ namespace ModuloAutenticacao.Classes
                 //se não existe conexão.
                 if (_conn == null)
                 {
-                    //criar a conexão com MySQL   //nos parênteses -connection string
-                    //abaixo conexao banco computador senai
-                    _conn = new SqlConnection(@"Server = Lab206_16\SQLEXPRESS; Database = ProjetoEstoquev; Uid = sa; Pwd = teste*123;");
+                    //criar a conexão com SQL Server  //nos parênteses -connection string
 
-                    //abaixo conexao banco notebook
-                    //_conn = new SqlConnection(@"Server = CLEISSIM; Database = ProjetoEstoquev; Uid = sa; Pwd = cleissim;");
+                    //pra conectar um banco de dados so definir o caminho, nome do banco, login e senha;
+
+                    //conexao banco computador senai
+                    //_conn = new SqlConnection(@"Server = Lab206_16\SQLEXPRESS; Database = ProjetoEstoquev; Uid = sa; Pwd = teste*123;");
+
+                    //conexao banco notebook
+                    _conn = new SqlConnection(@"Server = CLEISSIM; Database = ProjetoEstoquev; Uid = sa; Pwd = cleissim;");
                 }
                 //retorna a conexão
                 return _conn;
