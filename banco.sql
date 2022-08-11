@@ -43,4 +43,7 @@ DELETE Nivel WHERE codigo=4;
 
 DELETE Usuario WHERE id=4;
 
+DROP TABLE Usuario;
+DROP TABLE Nivel;
+
 */

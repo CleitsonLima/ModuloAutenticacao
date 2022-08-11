@@ -78,5 +78,6 @@ namespace ModuloAutenticacao.Desktop
                 MessageBox.Show("Usuario cadastrado com sucesso!");
             }
         }
+
     }
 }
